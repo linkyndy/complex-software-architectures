@@ -121,5 +121,6 @@ if __name__ == '__main__':
     oliver = StabilizerBarAssembler('oliver', 1)
     donald = ChairPackager('donald', 4)
 
-    controller = Controller(blackboard, workers=[john, travis, james, oliver, donald])
+    controller = Controller(blackboard,
+                            workers=[john, travis, james, oliver, donald])
     controller.run()
